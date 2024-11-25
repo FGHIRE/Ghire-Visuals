@@ -1,0 +1,108 @@
+/* Colores basados en tu paleta */
+:root {
+    --pantone-689: #6C3F58; /* Fondo profundo */
+    --pantone-7646: #9E3C52; /* Titulares */
+    --pantone-494: #E8A0AC; /* Resaltados */
+    --pantone-524: #D6B6CF; /* Fondo sutil */
+    --text-color: #333; /* Texto general */
+  }
+  
+  /* General */
+  body {
+    font-family: 'Maison Nue - Book', sans-serif;
+    background-color: var(--pantone-524);
+    margin: 0;
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  /* Hero Section */
+  .hero {
+    height: 100vh;
+    background: var(--pantone-689);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, var(--pantone-7646), transparent);
+    opacity: 0.8;
+  }
+  
+  .hero-content h1 {
+    font-family: 'Adelphi PE Variable - Display Bold', serif;
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .hero-content .btn {
+    background-color: var(--pantone-494);
+    color: var(--pantone-689);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+  
+  /* Sección Servicios */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .service-card {
+    background: white;
+    border-left: 5px solid var(--pantone-7646);
+    padding: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Portafolio */
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .portfolio-item {
+    background: var(--pantone-494);
+    height: 150px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--pantone-689);
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .portfolio-item:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+    background: var(--pantone-7646);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
